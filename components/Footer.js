@@ -23,24 +23,18 @@ const Footer = () => {
             <Grid container>
         
                 <Grid item xs={3} sx={{color:'#fff'}}>
-                    <div class="grid-x grid-margin-x">
-                        <div class="xlarge-12 medium-6 cell small-order-1 large-order-1 xlarge-order-1">
-                        <div class="logo">
-                            <a href="https://www.qub.ac.uk/" aria-label="Footer links - Home"></a>
-                        </div>
-                        </div>
-                        <div class="xlarge-12 cell small-order-2 medium-order-3 xlarge-order-2">
-                        <ul class="location-phone">
-                            <li>University Road, Belfast<br/>Northern Ireland, BT7 1NN</li>
-                            <li><a href="tel:02890245133">+44 (0)28 9024 5133</a></li>
-                        </ul>
-                        </div>
-                        <div class="xlarge-12 medium-6 cell small-order-3 medium-order-2 xlarge-order-3">
-                            <a class="facebook" href="https://www.facebook.com/QUBelfast/" aria-label="Footer links - Facebook"><FacebookIcon sx={{mr:1}} /></a>
-                            <a class="twitter" href="https://twitter.com/QUBelfast" aria-label="Footer links - Twitter"><TwitterIcon sx={{mr:1}} /></a>
-                            <a class="instagram" href="https://www.instagram.com/qubelfast/" aria-label="Footer links - Instagram"><InstagramIcon sx={{mr:1}} /></a>
-                            <a class="youtube" href="https://www.youtube.com/user/Come2Queens" aria-label="Footer links - Youtube"><LinkedInIcon sx={{mr:1}} /></a>
-                        </div>
+                    <div className="logo">
+                        <a href="https://www.qub.ac.uk/" aria-label="Footer links - Home"></a>
+                    </div>
+                    <ul>
+                        <li>University Road, Belfast<br/>Northern Ireland, BT7 1NN</li>
+                        <li><a href="tel:02890245133">+44 (0)28 9024 5133</a></li>
+                    </ul>
+                    <div>
+                        <a className="facebook" href="https://www.facebook.com/QUBelfast/" aria-label="Footer links - Facebook"><FacebookIcon sx={{mr:1}} /></a>
+                        <a className="twitter" href="https://twitter.com/QUBelfast" aria-label="Footer links - Twitter"><TwitterIcon sx={{mr:1}} /></a>
+                        <a className="instagram" href="https://www.instagram.com/qubelfast/" aria-label="Footer links - Instagram"><InstagramIcon sx={{mr:1}} /></a>
+                        <a className="youtube" href="https://www.youtube.com/user/Come2Queens" aria-label="Footer links - Youtube"><LinkedInIcon sx={{mr:1}} /></a>
                     </div>
                 </Grid>
         
@@ -49,7 +43,7 @@ const Footer = () => {
                     <Grid container>
             
                         <Grid item xs={4}>
-                            <div class="footer-list">
+                            <div className="footer-list">
                             <h6 data-toggle="title-1 menu-1" aria-expanded="false" aria-controls="title-1 menu-1"><span id="title-1" data-toggler=".expanded" data-expanded="hts8c8-expanded">Top links</span></h6>
                             <ul id="menu-1" data-toggler=".expanded" data-expanded="ragd5p-expanded">
                                 <li><a href="https://www.qub.ac.uk/sites/QUBJobVacancies/">Jobs</a></li>
@@ -62,7 +56,7 @@ const Footer = () => {
                         </Grid>
             
                         <Grid item xs={4}>
-                            <div class="footer-list">
+                            <div className="footer-list">
                             <h6 data-toggle="title-2 menu-2" aria-expanded="false" aria-controls="title-2 menu-2"><span id="title-2" data-toggler=".expanded" data-expanded="3j4p8f-expanded">Study</span></h6>
                             <ul id="menu-2" data-toggler=".expanded" data-expanded="7gbqpw-expanded">
                                 <li><a href="https://www.qub.ac.uk/Study/Undergraduate/">Undergraduate</a></li>
@@ -75,7 +69,7 @@ const Footer = () => {
                         </Grid>
             
                         <Grid item xs={4}>
-                            <div class="footer-list">
+                            <div className="footer-list">
                             <h6 data-toggle="title-3 menu-3" aria-expanded="false" aria-controls="title-3 menu-3"><span id="title-3" data-toggler=".expanded" data-expanded="jjlehb-expanded">Information</span></h6>
                             <ul id="menu-3" data-toggler=".expanded" data-expanded="ll5w3g-expanded">
                                 <li><a href="https://www.qub.ac.uk/about/website/privacy-and-cookies/">Privacy and cookies</a></li>
@@ -91,27 +85,27 @@ const Footer = () => {
             </Grid>
         
         
-            <div class="grid-x grid-margin-x margin-top-2">
-                <div class="xxlarge-7 large-9 medium-10 cell">
+            <div className="grid-x grid-margin-x margin-top-2">
+                <div className="xxlarge-7 large-9 medium-10 cell">
                 
-                <div class="grid-x grid-margin-x">
-                    <div class="cell">
+                <div className="grid-x grid-margin-x">
+                    <div className="cell">
                     <small>Queen's University Belfast is registered with the Charity Commission for Northern Ireland NIC101788.</small>
                     </div>
-                    <div class="cell shrink">
+                    <div className="cell shrink">
                     <small>VAT registration number: GB 254 7995 11</small>
                     </div>      		
-                    <div class="cell shrink">
+                    <div className="cell shrink">
                     <small>EORI Numbers GB254799511000</small>
                     </div>      		
-                    <div class="cell shrink">
+                    <div className="cell shrink">
                     <small>XI254799511000</small>
                     </div>  
                 </div> 
                 
                 </div>
-                <div class="medium-12 text-center medium-text-right cell">
-                <a href="#top" class="back-to-top-link" data-smooth-scroll="u1m4wj-smooth-scroll" id="t58spy-smooth-scroll"><span class="show-for-sr">Return to top</span><i class="far fa-arrow-up"></i></a>
+                <div className="medium-12 text-center medium-text-right cell">
+                <a href="#top" className="back-to-top-link" data-smooth-scroll="u1m4wj-smooth-scroll" id="t58spy-smooth-scroll"><span className="show-for-sr">Return to top</span><i className="far fa-arrow-up"></i></a>
                 </div>
             </div>
         

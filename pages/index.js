@@ -20,7 +20,7 @@ export default function Home() {
 
         <Alert severity="warning" sx={{my:2}} className={homeStyles.alert}>
           <AlertTitle>Coronavirus (COVID-19)</AlertTitle>
-          <a href="https://www.qub.ac.uk/home/coronavirus-faqs">COVID-19 FAQs</a>&nbsp;|&nbsp;<a href="https://www.qub.ac.uk/home/coronavirus-faqs/asymptomatic-testing">Asymptomatic Testing</a> | <a class="link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=6ner6qW040mh6NbdI6HyhttEmBrbsE9JlZQYslaBsRRUNDhPVFcxVTZGR1dKQ1BYVUowU1RRUzgwVCQlQCN0PWcu">Self-Reporting Portal</a> |&nbsp;<a class="link" href="https://www.qub.ac.uk/sites/my-queens/working-together/get-ready/">Teaching Arrangements, Arrival and Vaccination</a>
+          <a href="https://www.qub.ac.uk/home/coronavirus-faqs">COVID-19 FAQs</a>&nbsp;|&nbsp;<a href="https://www.qub.ac.uk/home/coronavirus-faqs/asymptomatic-testing">Asymptomatic Testing</a> | <a className="link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=6ner6qW040mh6NbdI6HyhttEmBrbsE9JlZQYslaBsRRUNDhPVFcxVTZGR1dKQ1BYVUowU1RRUzgwVCQlQCN0PWcu">Self-Reporting Portal</a> |&nbsp;<a className="link" href="https://www.qub.ac.uk/sites/my-queens/working-together/get-ready/">Teaching Arrangements, Arrival and Vaccination</a>
         </Alert>
 
 
