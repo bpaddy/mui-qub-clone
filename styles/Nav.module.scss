@@ -1,0 +1,15 @@
+.footer {
+  /*border-top: 1px solid #eaeaea;*/
+}
+
+.footer ul {
+  padding: 0;
+  list-style:none;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

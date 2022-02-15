@@ -1,26 +1,28 @@
-import React from 'react'
-import theme from './theme';
-import { ThemeProvider } from '@mui/material/styles';
-
 //MUI Components
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
+//CSS
+import footerStyles from '../styles/Footer.module.scss'
+
+//ICONS
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   return (
-    <ThemeProvider theme={theme}>
+        <footer className={footerStyles.footer}>
 
-        <footer>
+            <Box sx={{backgroundColor:'grey.dark', mt:4}}>
 
-            <Box sx={{backgroundColor:'grey.dark'}}>
-
-                <Container>
+            <Container>
     
             <Grid container>
         
-                <Grid item xs={3}>
+                <Grid item xs={3} sx={{color:'#fff'}}>
                     <div class="grid-x grid-margin-x">
                         <div class="xlarge-12 medium-6 cell small-order-1 large-order-1 xlarge-order-1">
                         <div class="logo">
@@ -34,12 +36,10 @@ const Footer = () => {
                         </ul>
                         </div>
                         <div class="xlarge-12 medium-6 cell small-order-3 medium-order-2 xlarge-order-3">
-                        <ul class="social-links-circled">
-                            <li><a class="facebook" href="https://www.facebook.com/QUBelfast/" aria-label="Footer links - Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="twitter" href="https://twitter.com/QUBelfast" aria-label="Footer links - Twitter"><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="instagram" href="https://www.instagram.com/qubelfast/" aria-label="Footer links - Instagram"><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="youtube" href="https://www.youtube.com/user/Come2Queens" aria-label="Footer links - Youtube"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
+                            <a class="facebook" href="https://www.facebook.com/QUBelfast/" aria-label="Footer links - Facebook"><FacebookIcon sx={{mr:1}} /></a>
+                            <a class="twitter" href="https://twitter.com/QUBelfast" aria-label="Footer links - Twitter"><TwitterIcon sx={{mr:1}} /></a>
+                            <a class="instagram" href="https://www.instagram.com/qubelfast/" aria-label="Footer links - Instagram"><InstagramIcon sx={{mr:1}} /></a>
+                            <a class="youtube" href="https://www.youtube.com/user/Come2Queens" aria-label="Footer links - Youtube"><LinkedInIcon sx={{mr:1}} /></a>
                         </div>
                     </div>
                 </Grid>
@@ -120,7 +120,6 @@ const Footer = () => {
                 </Container>
             </Box>
         </footer>
-    </ThemeProvider>
   )
 }
 
